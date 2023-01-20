@@ -46,9 +46,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/Ge0tgVu.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
 2.) Use Remote Desktop to connect to your Windows 10 VM. Install Wireshark by searching 'download wireshark' in the web browser. Download the 'Windows Installer (64-bit)' from the Wireshark websiter. Run the installer and complete the installation steps. Open Wireshark (Ethernet) and filter for ICMP traffic only by typing 'ICMP' in the search bar. Go back to the Azure portal, and obtain VM2's private IP address from the overview tab. Attempt to ping it from the Windows 10 VM, and observe the requests and replies within Wireshark. Ping a public website (such as www.google.com) and observe the traffic in Wireshark. Initiate a non-stop ping from your Windows 10 VM to you Ubuntu VM. Go back to the Azure portal -> Network Security Groups -> VM2 -> Inbound security rules -> Add -> Source: Any -> Source port ranges: * -> Destination: Any -> Service: Custom -> Destination port ranges: * -> Protocol: ICMP -> Action: Deny -> Priority: 200 -> Any applicable name will work. Add this new rule and observe the results back in your Windows 10 VM. Once the rule has taken effect, the request will begin to time out in Wireshark. From here, you can re-enable ICMP traffic for the Network Security Group your Ubuntu VM is using. This should allow the ping activity to resume in your Windows 10 VM. Stop the ping with 'CTRL+C'
 </p>
 <br />
