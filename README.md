@@ -82,6 +82,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
+
+![sebee](https://user-images.githubusercontent.com/119359052/213799053-302c5da8-886a-47b0-a6f2-4b5951fe1cbc.gif)
+
+
+
 <p>
 7.) From here, just close out your Remote Desktop Connection, and delete all resource groups running on Azure. You did it!
 </p>
